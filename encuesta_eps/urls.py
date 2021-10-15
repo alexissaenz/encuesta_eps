@@ -24,4 +24,6 @@ urlpatterns = [
     path('refresh/', TokenRefreshView.as_view()),
     path('user/', views.UserCreateView.as_view()),
     path('user/<int:pk>/', views.UserDetailView.as_view()),
+    path('encuesta/', views.EncuestaCreateView.as_view()),
+    path('encuesta/<int:pk>/', views.EncuestaDetailView.as_view()),
 ]
